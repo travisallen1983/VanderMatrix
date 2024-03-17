@@ -3,11 +3,6 @@ def vander_matrix_lists(input_list: list[int], input_range: int) -> list[list]:
     return output_list
 
 
-vander_output = vander_matrix_lists([1, 2, 3, 4], 7)
-for row in vander_output:
-    print(row)
-
-
 def vander_matrix_loops(input_list: list[int], input_range: int) -> list[list]:
     output_list = []
     for list_item in input_list:
@@ -18,6 +13,15 @@ def vander_matrix_loops(input_list: list[int], input_range: int) -> list[list]:
     return output_list
 
 
-vander_output = vander_matrix_loops([1, 2, 3, 4], 7)
-for row in vander_output:
-    print(row)
+def main():
+    vander_output = vander_matrix_lists([1, 2, 3, 4], 7)
+    for row in vander_output:
+        print(row)
+
+    vander_output = vander_matrix_loops([1, 2, 3, 4], 7)
+    for row in vander_output:
+        print(row)
+
+
+if __name__ == '__main__':
+    main()
